@@ -1,0 +1,150 @@
+{
+  // -------------------------------------------------------------------------
+  // Global configuration
+  // -------------------------------------------------------------------------
+  "layer": "top",
+  "position": "top",
+  "height": 38,
+  "margin-left": 12,
+  "margin-bottom": 0,
+  "margin-right": 12,
+  "spacing": 18, // Gaps between modules (4px)
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    //"hyprland/window"
+    "clock#3",
+    "custom/weather"
+    //"custom/gammastep"
+  ],
+  "modules-right": [
+    "tray",
+    //*"pulseaudio/slider",
+    "pulseaudio",
+    "temperature#cpu",
+    "custom/nvidia",    
+ //    "memory",
+    "power-profiles-daemon",
+    "custom/power"
+  ],
+  // Clocks
+  "clock": {
+    "format": "  {:%H:%M   %e %b}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "today-format": "<b>{}</b>"
+  },
+  "clock#date": {
+    "format": "󰥔  {:%H:%M \n %e %b}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "today-format": "<b>{}</b>"
+  },
+  "clock#1": {
+    "format": " {:%a}",
+    "tooltip": false,
+    "on-click": "gsimplecal"
+  },
+  "clock#2": {
+    "format": " {:%d-%h-%Y}",
+    "tooltip": false,
+    "on-click": "gsimplecal"
+  },
+  "clock#3": {
+    "format": " {:%H:%M:%S %p}",
+    "tooltip": false,
+    "on-click": "gsimplecal"
+  },
+  "tray": {
+    "icon-size": 15,
+    "spacing": 20
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
+  "pulseaudio": {
+    "scroll-step": 3, // %, can be a float
+    "format": "{icon} {volume}% {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    //"format-source": "{volume}% ",
+    //"format-source-muted": "",
+    "format-source": "",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol",
+    "on-click-right": "amixer sset Master toggle"
+  },
+  "memory": {
+    "interval": 5,
+    "format": "  {used:0.2f} / {total:0.0f} GB",
+    "on-click": "ghostty -e btop"
+  },
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{name}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1 1>/dev/null",
+    "on-scroll-down": "hyprctl dispatch workspace e-1 1>/dev/null",
+    "sort-by-number": true,
+    "active-only": false,
+  },
+  // Custom
+  "custom/weather": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/weatherapi.sh",
+    "interval": 600
+  },
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": "Power Menu",
+    "on-click": "nwg-bar -i 64 -f"
+  },
+  "temperature#cpu": {
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "format": " CPU: {temperatureC}°C",
+    "interval": 5
+  },
+ "custom/nvidia": {
+    "exec": "~/.config/waybar/scripts/nvidia-temp.sh",
+    "interval": 5,
+    "format": "GPU: {}°C"
+},
+"custom/launcher": {
+  "format": "",  // or use a different icon like   
+  "tooltip": "Open App Drawer",
+  "on-click": "nwg-drawer",
+  "on-click-right": "nwg-drawer-config",
+  "class": "drawer-button"
+}
+
+
+
+
+
+}

@@ -1,0 +1,10 @@
+# Hyprland-only environment variables
+
+# Identify the desktop
+export XDG_CURRENT_DESKTOP=Hyprland
+export DESKTOP_SESSION=hyprland
+export GTK_THEME=Andromeda-standard-buttons
+
+# Firefox Wayland
+export MOZ_ENABLE_WAYLAND=1
+
