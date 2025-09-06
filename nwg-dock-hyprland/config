@@ -1,0 +1,25 @@
+# === nwg-dock-hyprland config ===
+# Place this at ~/.config/nwg-dock-hyprland/config
+
+# Monitor to place the dock on
+# Leave blank ("") for primary monitor or auto-detect
+monitor = 
+
+# Where to anchor the dock
+anchor = bottom
+position = center
+
+# Layer to draw the dock on (top keeps it above windows)
+layer = top
+
+# Autohide settings
+autohide = true
+hide-delay = 0.2      # seconds before hiding (smooths flicker)
+show-delay = 0.05     # seconds before showing after edge hit
+
+# Icon and spacing
+icon-size = 48
+spacing = 6
+
+# Other options
+exclusive-zone = true  # reserve space so windows don't overlap
