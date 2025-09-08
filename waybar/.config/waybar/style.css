@@ -1,9 +1,5 @@
-@define-color background rgba(0, 0, 0, 0.99);
 @define-color surface0 rgba(255, 255, 255, 0.06);
-@define-color text rgba(255, 255, 255, 1.0);
-@define-color textAlpha rgba(255, 255, 255, 0.5);
-@define-color accent rgba(30, 120, 168, 1.0);
-@define-color accentAlpha rgba(30, 120, 168, 0.15);
+
 @define-color red rgba(243, 139, 168, 1.0);
 @define-color yellow rgba(249, 226, 175, 1.0);
 @define-color green rgba(166, 227, 161, 1.0);
@@ -15,7 +11,7 @@
 }
 
 window#waybar {
-  background: @background;
+  background: rgba(37, 38, 48, 0.9);
   border-radius: 12px;
   padding: 4px 10px;
   margin: 6px;
@@ -34,12 +30,12 @@ window#waybar {
   padding: 4px 12px;
   margin: 2px;
   border-radius: 10px;
-  color: @text;
+  color: rgba(255, 255, 255, 1.0);
 }
 
 #workspaces button.active,
 #workspaces button:checked {
-  background: @accent;
+  background: rgb(141, 100, 218);
   color: #000000;
   font-weight: bold;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -48,8 +44,8 @@ window#waybar {
 /* Hover */
 #workspaces button:hover,
 button:hover {
-  background-color: @accentAlpha;
-  color: @accent;
+  background-color: rgba(184, 144, 243, 1);
+  color: rgba(255,255,255, 1);
 }
 
 /* Modules */
@@ -81,8 +77,8 @@ button:hover {
 }
 
 .drawer-button:hover {
-  color: @accent;
-  background-color: @accentAlpha;
+  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(184, 144, 243, 1);
 }
 #pulseaudio:hover,
 #clock:hover,
@@ -102,8 +98,8 @@ button:hover {
 #custom-power:hover,
 #power-profiles-daemon:hover,
 #tray:hover {
-  background-color: @accentAlpha;
-  color: @accent;
+  background-color: rgba(184, 144, 243, 1);
+  color: rgba(0, 0, 0, 1);
   border-radius: 10px;
 }
 #custom-launcher {

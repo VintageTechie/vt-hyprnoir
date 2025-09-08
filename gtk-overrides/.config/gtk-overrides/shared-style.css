@@ -1,8 +1,8 @@
-@define-color bg rgba(0, 0, 0, 0.99);
+@define-color bg rgba(30, 31, 41, 0.99);
 @define-color fg rgba(255, 255, 255, 1.0);
 @define-color fgSoft rgba(255, 255, 255, 0.9);
 @define-color fgAlt rgba(255, 255, 255, 0.5);
-@define-color hover rgba(255, 255, 255, 0.10);
+@define-color hover rgba(184, 144, 243, 0.95);
 @define-color active rgba(255, 255, 255, 0.15);
 @define-color border rgba(255, 255, 255, 0.1);
 @define-color shadow rgba(255, 255, 255, 0.2);
