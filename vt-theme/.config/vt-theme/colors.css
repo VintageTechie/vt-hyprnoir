@@ -1,4 +1,4 @@
-@define-color background       rgba(20, 20, 20, 0.85);   /* glossy dark base */
+@define-color background       rgba(11, 13, 15, 0.95);   /* glossy dark base */
 @define-color surface0         rgba(255, 255, 255, 0.08); /* subtle border highlight */
 @define-color text             rgba(255, 255, 255, 1.0);
 @define-color textAlpha        rgba(255, 255, 255, 0.5);
