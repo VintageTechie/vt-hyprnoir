@@ -1,8 +1,8 @@
 # Glossy black mako theme (safe config)
 
-background-color=#000000
+background-color=#252630
 text-color=#ffffff
-border-color=#444444
+border-color=#B890F3
 
 width=400
 height=200
@@ -21,10 +21,10 @@ layer=overlay
 default-timeout=5000
 
 [urgency=low]
-border-color=#44475a
+border-color=#B890F3
 
 [urgency=normal]
-border-color=#7aa2f7
+border-color=#B890F3
 
 [urgency=high]
-border-color=#ff5555
+border-color=#B890F3
