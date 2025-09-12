@@ -94,7 +94,7 @@ button:hover {
 #custom-power:hover,
 #power-profiles-daemon:hover,
 #tray:hover {
-  background-color: rgba(184, 144, 243, 1);
+  background-color: rgba(125, 107, 212, 1);
   color: rgba(0, 0, 0, 1);
   border-radius: 10px;
 }
