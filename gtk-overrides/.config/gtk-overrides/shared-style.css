@@ -2,12 +2,12 @@
 @define-color fg rgba(255, 255, 255, 1.0);
 @define-color fgSoft rgba(255, 255, 255, 0.9);
 @define-color fgAlt rgba(255, 255, 255, 0.5);
-@define-color hover rgba(125, 107, 212, 0.95);
+@define-color hover rgba(74,120,145,1);
 @define-color active rgba(255, 255, 255, 0.15);
 @define-color border rgba(255, 255, 255, 0.1);
 @define-color shadow rgba(255, 255, 255, 0.2);
-@define-color accent rgba(30, 120, 168, 1.0);
-@define-color accentAlpha rgba(30, 120, 168, 0.15);
+@define-color accent rgba(75, 120, 145, 1.0);
+@define-color accentAlpha rgba(75, 120, 145, 0.15);
 
 /* === Shared Base Styles === */
 * {

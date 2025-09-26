@@ -31,7 +31,7 @@ window#waybar {
 
 #workspaces button.active,
 #workspaces button:checked {
-  background: rgba(112, 112, 169, 1);
+  background: rgba(75, 120, 145, 1);
   color: #000000;
   font-weight: bold;
   border: 0px solid rgba(255, 255, 255, 0.1);
@@ -40,7 +40,7 @@ window#waybar {
 /* Hover */
 #workspaces button:hover,
 button:hover {
-  background-color: rgba(184, 144, 243, 1);
+  background-color: rgb(45, 138, 189);
   color: rgba(255,255,255, 1);
 }
 
@@ -73,8 +73,8 @@ button:hover {
 }
 
 .drawer-button:hover {
-  color: rgba(255, 255, 255, 1.0);
-  background-color: rgba(184, 144, 243, 1);
+  color: rgba(75, 120, 145, 1.0);
+  background-color: rgba(74, 120, 145, 1);
 }
 #pulseaudio:hover,
 #clock:hover,
@@ -94,7 +94,7 @@ button:hover {
 #custom-power:hover,
 #power-profiles-daemon:hover,
 #tray:hover {
-  background-color: rgba(125, 107, 212, 1);
+  background-color: rgba(75, 120, 145, 1);
   color: rgba(0, 0, 0, 1);
   border-radius: 10px;
 }
