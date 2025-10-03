@@ -31,12 +31,12 @@ They auto-start with the Hyprland session and terminate cleanly on logout.
 
 All visual styles are based on the [Dracula color palette](https://draculatheme.com/), applied consistently across components:
 
-- **GTK Theme**: Dracula (dark)
-- **Waybar**: Custom `style.css` themed with Dracula colors
-- **SwayNC**: Styled with matching Dracula accents
+- **GTK Theme**: Andromeda (dark)
+- **Waybar**: Custom `style.css` themed with Dark colors
+- **SwayNC**: Styled with matching accents
 - **Hyprpaper**: Uses a dark-themed 3440x1440 wallpaper
 - **Font**: JetBrains Mono
-- **Icons**: Papirus-Dark or Dracula icons
+- **Icons**: Obsidan Grey
 
 > The result is a seamless, modern, and dark aesthetic across all UI elements.
 
