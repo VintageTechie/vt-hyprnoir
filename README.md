@@ -41,6 +41,16 @@ All visual styles are based on the [Dracula color palette](https://draculatheme.
 > The result is a seamless, modern, and dark aesthetic across all UI elements.
 
 ---
+📸 Screenshots
+
+Here are example screenshots of the setup:
+
+![Waybar Screenshot](dt1.png)
+
+
+![Hyprland Desktop Screenshot](dt2.png)
+
+---
 
 ## 🚀 Getting Started
 
