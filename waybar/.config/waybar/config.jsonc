@@ -5,10 +5,10 @@
   "layer": "top",
   "position": "top",
   "height": 38,
-  "margin-left": 12,
+  "margin-left": 20,
   "margin-bottom": 0,
-  "margin-right": 12,
-  "spacing": 18, // Gaps between modules (4px)
+  "margin-right": 20,
+  "spacing": 2, // Gaps between modules (4px)
   "modules-left": [
     "custom/launcher",
     "hyprland/workspaces"
@@ -30,11 +30,7 @@
     "custom/power"
   ],
   // Clocks
-  "clock": {
-    "format": "  {:%H:%M   %e %b}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "today-format": "<b>{}</b>"
-  },
+  "clock": { "format": " {:%H:%M  %e %b}", "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>", "today-format": "<b>{}</b>" },
   "clock#date": {
     "format": "󰥔  {:%H:%M \n %e %b}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -51,10 +47,10 @@
     "on-click": "gsimplecal"
   },
   "clock#3": {
-    "format": " {:%H:%M:%S %p}",
-    "tooltip": false,
-    "on-click": "gsimplecal"
-  },
+  "format": " {:%I:%M %p}",      // 12-hour with AM/PM
+  "tooltip": false,
+  "on-click": "gsimplecal"
+},
   "tray": {
     "icon-size": 15,
     "spacing": 20
