@@ -10,10 +10,14 @@ These are my personal dotfiles for [Hyprland](https://github.com/hyprwm/Hyprland
 The following components are managed via `systemd --user` for reliable session-based startup and restart:
 
 - **Waybar** – status bar
-- **SwayNC** – notification daemon
+- **Mako** – notification daemon
 - **Hypridle** – idle manager (triggers lock and suspend)
 - **Hyprpaper** – wallpaper daemon
-- **nwg-dock** – dock/panel for quick access
+- **nwg-dock-hyprland** – dock/panel for quick access
+- **nwg-bar** – Power /  System
+- **nwg-panel** – Menu System
+- **wofi** – quick access
+
 
 All services use the following structure for proper Hyprland session integration:
 
