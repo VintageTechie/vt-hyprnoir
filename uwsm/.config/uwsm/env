@@ -14,10 +14,15 @@ export OZONE_PLATFORM_HINT=auto
 
 # NVIDIA / VA-API / GBM configuration
 export LIBVA_DRIVER_NAME=nvidia
+export VDPAU_DRIVER=nvidia
 export __GLX_VENDOR_LIBRARY_NAME=nvidia
 export GBM_BACKEND=nvidia-drm
-export __GL_GSYNC_ALLOWED=0
-export __GL_VRR_ALLOWED=0
+export __GL_GSYNC_ALLOWED=1
+export __GL_VRR_ALLOWED=1
+export NVD_BACKEND=direct
+
+# NVIDIA cursor fix
+export WLR_NO_HARDWARE_CURSORS=1
 
 # Software rendering fallback
 export LIBGL_ALWAYS_SOFTWARE=0
